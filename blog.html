@@ -10,61 +10,6 @@
 </head>
 <body>
 
-    <section class="container mt-5">
-        <h1 class="text-center bg-primary p-2">Blog Page for Question Answer</h1>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  1. Differences between local storage and session storage.
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                <p>The difference between localStorage and sessionStorage has to do with lifetime and scope: how long the data is saved for and who the data is accessible to. Session storage is destroyed once the user closes the browser whereas, Local storage stores data with no expiration date.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  2. Differences between Global Scope and Block Scope.
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p> Global Scope: In a programming environment, the global scope is the scope that contains, and is visible in, all other scopes. In client-side JavaScript, the global scope is generally the web page inside which all the code is being executed.</p>
-                  <p>Block Scope: A variable when declared inside the if or switch conditions or inside for or while loops, are accessible within that particular condition or loop.</p>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed fw-bold fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-
     <section class="container mt-5 bg-light">
         <h1 class="text-center bg-primary p-2">Blog Page for Question Answer</h1>
         <div class="my-5">
@@ -79,6 +24,20 @@
         <div class="my-5">
             <h4 class="fw-bold">3. How Event-Loop works in JavaScript?</h4>
             <p> The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task Queue to the Call Stack(A Call Stack is simply nothing but a stack data structure where tasks or code is being executed accordingly,  in which the last element added is always the first to be removed from the stack). Once the Stack is clear, the event loop triggers and checks the Task Queue for available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear again, and repeats the same process.</p>
+        </div>
+        <div class="my-5">
+            <h4 class="fw-bold">4. How many ways do we get undefined in JavaScript?</h4>
+            <h5>Eight (8) ways we can get undefined in JavaScript</h5>
+            <ol>
+              <li>Variable that is not initialize</li>
+              <li>Function with no return</li>
+              <li>Paramter that is not return as arguemnt when function called</li>
+              <li> If return nothing on the rigth side  give undefine </li>
+              <li>Property that dont exist on an object will give undefine</li>
+              <li>Accessing array element outside of the index range</li>
+              <li>Deleting element value to an array</li>
+              <li>Set a value directly to undfiened</li>
+            </ol>
         </div>
 
     </section>
